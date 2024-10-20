@@ -1,192 +1,310 @@
 <!DOCTYPE html>
-<html lang="ja" style="scroll-padding-top:50px;">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>データ自動化ソリューション - 業務効率化のための最適なツール</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff8e1;
+            color: #5d4037;
+        }
+
+        .bg-amber {
+            background-color: #ffca28;
+        }
+
+        .btn-amber {
+            background-color: #ffa000;
+            border-color: #ffa000;
+            color: white;
+        }
+
+        .btn-amber:hover {
+            background-color: #ff8f00;
+            border-color: #ff8f00;
+            color: white;
+        }
+
+        .bg-blue-100 {
+            background-color: #e3f2fd;
+        }
+
+        .btn-primary {
+            background-color: #1976d2;
+            border-color: #1976d2;
+        }
+
+        .btn-primary:hover {
+            background-color: #1565c0;
+            border-color: #1565c0;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .feature-img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- NAV -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./logo.png" height="30"></a>
+            <a class="navbar-brand " href="#"><img src="./CreatingStandatds.png" height="40"> Creating
+                Standards</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse fw-bold" id="navbarNav">
-                <ul class="navbar-nav ms-auto me-2">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#hero">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#feature">特徴</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#showcases">詳細</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#price">プラン</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">機能</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#showcases">事例</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">料金</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">メンバー</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">チーム</a></li>
                 </ul>
-                <a class="btn btn-dark btn-sm text-white" href="#">無料で始める</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="py-5 bg-primary text-white" id="hero">
-        <div class="container overflow-hidden">
-            <div class="row flex-lg-row-reverse align-items-center">
-                <div class="col-lg-6" data-aos="zoom-in">
-                    <img src="https://doodleipsum.com/700x394/flat?i=41f017cf42bb4f905a48613ec87b613b"
-                        class="img-fluid">
-                </div>
-                <div class="col-lg-6" data-aos="fade-up">
-                    <p class="badge bg-warning text-white mb-1">HTMLだけでコーディング</p>
-                    <h1>Bootstrap超入門</h1>
-                    <p class="lead">Webプログラミング初心者がこのページを作れるようになる！</p>
-                </div>
-            </div>
+    <header id="hero" class="py-5 d-flex "
+        style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: top; min-height: 80vh;">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold mt-5 mb-4 text-shadow" data-aos="fade-up">データ処理を自動化し、生産性を最大化</h1>
+            <p class="lead fw-bold mb-5 text-shadow" data-aos="fade-up" data-aos-delay="200">
+                人口減少社会の日本で、高付加価値な仕事環境を実現するITソリューション
+            </p>
+            <a href="#" class="btn btn-lg btn-primary mt-5" data-aos="fade-up" data-aos-delay="400">無料デモを試す</a>
         </div>
-    </section>
-    <!-- FEATURE -->
-    <section class="bg-light py-4" id="feature">
-        <div class="container overflow-hidden">
-            <div class="row text-center" data-aos="zoom-in">
-                <div class="col-md-4 mb-3">
-                    <div class="fs-1"><i class="bi bi-film text-primary"></i></div>
-                    <h5>物語りがある</h5>
-                    <p class="text-secondary">「実用的に使える」または「新しい体験ができる」をテーマに、必要最小限の技術を使ってストーリーを展開し伏線を回収するコンテンツです。</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="fs-1"><i class="bi bi-tools text-primary"></i></div>
-                    <h5>新しいものづくり</h5>
-                    <p class="text-secondary">「ハードウェアだけでなく、プログラミングやデータサイエンスも１つのツールとして活用する「新しい時代のものづくり」です。</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="fs-1"><i class="bi bi-award text-primary"></i></div>
-                    <h5>モノにする</h5>
-                    <p class="text-secondary">技術要素をステップバイステップで学びながら、演習で試行錯誤を行い、自ら考え成果物を作り上げるスタイルです。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </header>
 
-    <!-- SHOWCASES -->
-    <section class="bg-light py-5" id="showcases">
-        <div class="container overflow-hidden">
-            <div class="row mb-5 align-items-center">
-                <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/hand-drawn?i=0e05d2d124e0a86b24727ce6006b739a">
-                </div>
-                <div class="col-lg-6 order-lg-2" data-aos="zoom-in-left">
-                    <span class="display-3 test-primary">01</span>
-                    <h3>物語りのあるコンテンツ</h3>
-                    <p>網羅的な説明が書かれたコンテンツではなく、映画のようにこころを動かすコンテンツを目指しています。シナリオ作りから検証を重ねて作成しています。</p>
-                </div>
-            </div>
-            <div class="row mb-5 align-items-center">
-                <div class="col-lg-6 order-lg-2" data-aos="zoom-in-left">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/hand-drawn?i=4a51d1ffc4e6797c11a5b4c7cc33cda6">
-                </div>
-                <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right">
-                    <span class="display-3 test-primary">02</span>
-                    <h3>新しい時代のものづくり</h3>
-                    <p>数十年の間に「ものづくり製品」から「ウェブサービス」へ時代が一変しましたが、更に時代は変化し続けます。画面の中だけの世界ではなく、リアルな世界に作用するものにこだわっています。</p>
-                </div>
-            </div>
-            <div class="row mb-5 align-items-center">
-                <div class="col-lg-6 order-lg-1" data-aos="zoom-in-right">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/hand-drawn?i=0293217a2126d91159f5a6717396cbe4">
-                </div>
-                <div class="col-lg-6 order-lg-2" data-aos="zoom-in-left">
-                    <span class="display-3 test-primary">03</span>
-                    <h3>ステップバイステップでモノにする</h3>
-                    <p>「ものものテック」では創業以来、毎年多数のリアルなハンズオンを企業・自治体・大学・各種イベント等で実施しています。リアルな教育でのエッセンスや最適化された難易度で皆さんの学びを加速します。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="bg-primary text-white py-5">
-        <div class="container overflow-hidden">
-            <div class="row text-center" data-aos="zoom-in">
-                <div class="col">
-                    <h3 class="py-5">あなたの物語を実現しよう！</h3>
-                    <p class="lead">ほぼCSSやJavaScriptは記述せずに、HTMLのコーディングだけでランディングページを作れます。</p>
-                    <p class="lead py-3"><a href="#" class="btn btn-lg btn-outline-light">学習を始める</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICE -->
-    <section class="bg-light py-5" id="price">
-        <div class="container overflow-hidden">
-            <div class="row text-center">
-                <h3 class="mb-4">プランを比較</h3>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <div class="card mb-4 shadow-sm" data-aos="zoom-in">
-                        <div class="card-header p-3">
-                            <h4 class="my-0 fw-normal">お試しプラン</h4>
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">主な機能</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            class="feature-img w-100" alt="自動データ処理">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><i class="fas fa-robot me-2"></i>自動データ処理</h3>
+                            <p class="card-text flex-grow-1">多様なデータを自動で読み取り、高速で正確な処理を実現します。</p>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            class="feature-img w-100" alt="高度な分析">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><i class="fas fa-chart-line me-2"></i>高度な分析</h3>
+                            <p class="card-text flex-grow-1">AIを活用した高度なデータ分析で、的確な意思決定をサポートします。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            class="feature-img w-100" alt="クラウド連携">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title"><i class="fas fa-cloud me-2"></i>クラウド連携</h3>
+                            <p class="card-text flex-grow-1">クラウドベースの処理で、どこからでもデータにアクセスできます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcases" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">導入事例</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title fs-1"><span class="h4">¥</span>0<span
-                                    class="h4 text-secondary fw-light">
-                                    /月</span></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                                <li class="text-secondary text-decoration-line-through">全ての学習コンテンツ閲覧</li>
-                                <li class="text-secondary text-decoration-line-through">講師による講義</li>
-                                <li class="text-secondary text-decoration-line-through">メンターによるサポート</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">すぐに試す</button>
+                            <h3 class="card-title">A社様 - 製造業</h3>
+                            <p class="card-text">データ処理時間を80%削減し、生産性が大幅に向上しました。</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-4 shadow-sm border-primary" data-aos="zoom-in">
-                        <div class="card-header py-3 border-primary bg-primary">
-                            <h4 class="my-0 fw-normal text-white">個人プラン</h4>
-                        </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title fs-1"><span class="h4">¥</span>0<span
-                                    class="h4 text-secondary fw-light">
-                                    /月（今だけ特別！）</span></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                                <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                                <li class="text-secondary text-decoration-line-through">講師による講義</li>
-                                <li class="text-secondary text-decoration-line-through">メンターによるサポート</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">登録・ログイン</button>
+                            <h3 class="card-title">B社様 - 金融サービス</h3>
+                            <p class="card-text">リアルタイムデータ分析により、顧客サービスの質が向上しました。</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-4 shadow-sm" data-aos="zoom-in">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">法人プラン</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="py-5 bg-amber">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-up">今すぐ生産性を向上させましょう</h2>
+            <a href="#" class="btn btn-lg btn-amber" data-aos="fade-up" data-aos-delay="200">無料トライアルを開始</a>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">料金プラン</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="0">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="text-center">スタータープラン</h3>
                         </div>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-center mb-4">¥50,000/月</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check me-2 text-success"></i>基本的なデータ処理</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>月間100GB処理量</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>基本サポート</li>
+                            </ul>
+                            <a href="#" class="btn btn-amber w-100 mt-auto">選択する</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card h-100">
+                        <div class="card-header bg-amber">
+                            <h3 class="text-center">プロフェッショナルプラン</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-center mb-4">¥100,000/月</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check me-2 text-success"></i>高度なデータ処理</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>月間500GB処理量</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>24時間サポート</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>カスタム分析レポート</li>
+                            </ul>
+                            <a href="#" class="btn btn-amber w-100 mt-auto">選択する</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="text-center">エンタープライズプラン</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-center mb-4">お問い合わせ</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check me-2 text-success"></i>カスタマイズされたソリューション</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>無制限の処理量</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>専任サポートマネージャー</li>
+                                <li><i class="fas fa-check me-2 text-success"></i>オンサイトトレーニング</li>
+                            </ul>
+                            <a href="#" class="btn btn-amber w-100 mt-auto">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">よくある質問</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item" data-aos="fade-up">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            どのような種類のデータを処理できますか？
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            テキスト、数値、画像など、さまざまな種類のデータを処理できます。具体的な要件についてはお問い合わせください。
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            導入にはどのくらいの時間がかかりますか？
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            基本的な導入は1〜2週間程度で完了します。ただし、カスタマイズの程度によって異なる場合があります。
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            データのセキュリティは大丈夫ですか？
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            最新のセキュリティ対策を実施しており、データの暗号化やアクセス制御など、高度なセキュリティ機能を提供しています。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">私たちのチーム</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                            class="card-img-top" alt="山田太郎">
                         <div class="card-body">
-                            <h1 class="card-title fs-1"><span class="h4">¥</span>50,000〜<span
-                                    class="h4 text-secondary fw-light"> /月</span>
-                            </h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li><i class="bi-check-lg text-success"></i>概要の把握と体験</li>
-                                <li><i class="bi-check-lg text-success"></i>全ての学習コンテンツ閲覧</li>
-                                <li><i class="bi-check-lg text-success"></i>講師による講義</li>
-                                <li><i class="bi-check-lg text-success"></i>メンターによるサポート</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">ご相談ください</button>
+                            <h3 class="card-title">山田太郎</h3>
+                            <p class="card-text">CEO &amp; 創業者</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                            class="card-img-top" alt="鈴木花子">
+                        <div class="card-body">
+                            <h3 class="card-title">鈴木花子</h3>
+                            <p class="card-text">CTO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                            class="card-img-top" alt="佐藤次郎">
+                        <div class="card-body">
+                            <h3 class="card-title">佐藤次郎</h3>
+                            <p class="card-text">営業部長</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                            class="card-img-top" alt="田中美咲">
+                        <div class="card-body">
+                            <h3 class="card-title">田中美咲</h3>
+                            <p class="card-text">カスタマーサポート責任者</p>
                         </div>
                     </div>
                 </div>
@@ -194,138 +312,36 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="bg-light py-5" id="faq">
-        <div class="container overflow-hidden">
-            <div class="row text-center">
-                <h3 class="mb-4">よくある質問</h3>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-3" data-aos="zoom-in-right">
-                    <img class="img-fluid"
-                        src="https://doodleipsum.com/700x394/flat?i=bcfd79692eeea887b9f20887c5a3a401">
-                </div>
-                <div class="col-lg-7" data-aos="zoom-in-left">
-                    <div class="accordion" id="accordionFAQ">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                    <p>Q. コンテンツは最後まで無料で学習可能なのでしょうか？</p>
-                                </button>
-                            </h2>
-                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                                data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
-                                    A. 登録するだけで最後まで無料で学習できます。
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    <p>Q. 登録にはお金がかかりますか？</p>
-                                </button>
-                            </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
-                                    A. 登録は無料です。入会金や年会費などもかかりません。
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <p>Q. このページは何ですか？</p>
-                                </button>
-                            </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                                data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
-                                    A. 「Bootstrap超入門」コンテンツのサンプルページです。学ぶことでこのページが最終的に作れるようになります。
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM -->
-    <section class="bg-light p-5" id="team">
-        <div class="container overflow-hidden">
-            <div class="row text-center">
-                <h3 class="mb-4">講師／メンター</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up">
-                    <div class="bg-white border shadow p-4 h-100">
-                        <img class="rounded-circle mb-3"
-                            src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=3c872b28d4577889c194cbc98b672696"
-                            width="80">
-                        <p class="text-secondary fw-bold">佐藤 太郎</p>
-                        <p class="border-bottom">チーフエンジニア</p>
-                        <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up">
-                    <div class="bg-white border shadow p-4 h-100">
-                        <img class="rounded-circle mb-3"
-                            src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=8de3b58cab71e0ce7d1e1081418edb62"
-                            width="80">
-                        <p class="text-secondary fw-bold">鈴木 太郎</p>
-                        <p class="border-bottom">エンジニア</p>
-                        <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up">
-                    <div class="bg-white border shadow p-4 h-100">
-                        <img class="rounded-circle mb-3"
-                            src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=58e15545cbaaccdde1e619aa57b6f85f"
-                            width="80">
-                        <p class="text-secondary fw-bold">高橋 花子</p>
-                        <p class="border-bottom">デザイナー</p>
-                        <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up">
-                    <div class="bg-white border shadow p-4 h-100">
-                        <img class="rounded-circle mb-3"
-                            src="https://doodleipsum.com/700x700/avatar-4?bg=87CEEB&i=be176fd7d38de78c85dbfba873eb723a"
-                            width="80">
-                        <p class="text-secondary fw-bold">田中 太郎</p>
-                        <p class="border-bottom">アシスタント</p>
-                        <p>本ページはサンプルであり、サポートメンバーは架空の人物です。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-3 bg-primary">
+    <footer class="py-4 bg-dark text-white">
         <div class="container">
             <div class="row">
-                <div class="col"><a href="https://monomonotech.jp/" class="text-decoration-none text-white">&copy;
-                        ものものテック</a></div>
-                <div class="col text-end"><a href="#" class="text-decoration-none text-white"><i
-                            class="bi bi-chevron-up"></i> Back to top</a></div>
+                <div class="col-md-4">
+                    <h4>データ自動化ソリューション</h4>
+                    <p>業務効率化と生産性向上のためのITツール</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>お問い合わせ</h4>
+                    <p>Email: info@example.com</p>
+                    <p>電話: 03-1234-5678</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>フォローする</h4>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 データ自動化ソリューション. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
-            once: true,
+            once: true
         });
     </script>
 </body>
